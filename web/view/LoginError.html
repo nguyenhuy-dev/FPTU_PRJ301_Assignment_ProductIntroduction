@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Error</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="Style/login.css" rel="stylesheet" type="text/css"/>
+        
+        <style>
+            .form-control {
+                height: 45px;
+            }
+            button {
+                height: 48px;
+            }
+            .btn {
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="alert alert-danger">
+            <strong style="font-size: 40px">Login Error</strong>
+        </div>
+        <form>
+            <div class="container">
+                <label for="account"><b>Account:</b></label>
+                <input type="text" class="form-control" placeholder="Ex: mem123" name="account" disabled>
+                <label for="pass"><b>Password:</b></label>
+                <input type="password" class="form-control" placeholder="Ex: Member123@" name="pass" required disabled>
+                <p style="font-size: 14px; color: red; font-weight: bold">You have exceeded the maximum login attempts. Login is now disabled!!</p>
+                <button type="button" class="btn btn-danger disabled">Sign In</button>
+            </div>
+        </form>
+    </body>
+</html>
