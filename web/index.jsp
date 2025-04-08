@@ -17,7 +17,7 @@
                 <div class="margin">
                     <strong style="font-size: 50px; color: white">Welcome to Product Introduction</strong>
                 </div>
-                <a href="${pageContext.request.contextPath}/product/list" class="btn btn-default btn-lg">View Moree</a>
+                <a href="${pageContext.request.contextPath}/product/list" class="btn btn-default btn-lg">View More</a>
             </div>
         </div>
     </body>
