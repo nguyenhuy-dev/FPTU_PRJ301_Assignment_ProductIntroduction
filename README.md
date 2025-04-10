@@ -12,6 +12,6 @@
 * JDK 8 is best suited for all Apache TomCat 8 releases
 * JDBC4, JSTL-1.2, SQLQuery in folder run
 
-### &#169 2025 Quốc Huy
+### &#169; 2025 Quốc Huy
 
 
