@@ -9,24 +9,21 @@ import javax.servlet.ServletContext;
 
 public class ConnectDB {
     private String hostName;
-    private String instance;
     private String port;
     private String dbName;
     private String user;
     private String pass;
 
     public ConnectDB() {
-        this.hostName = "LAPTOP-UALL54OF";
-        this.instance = "HUYNGUYEN";
+        this.hostName = "localhost";
         this.port = "1433";
         this.dbName = "ProductIntro";
-        this.user = "testkn";
+        this.user = "sa";
         this.pass = "12345";
     }
     
     public ConnectDB(ServletContext sc) {
         this.hostName = sc.getInitParameter("hostName");
-        this.instance = sc.getInitParameter("instance");
         this.port = sc.getInitParameter("port");
         this.dbName = sc.getInitParameter("dbName");
         this.user = sc.getInitParameter("user");
@@ -34,9 +31,9 @@ public class ConnectDB {
     }
     
     public String getURLString() {
-        String url = "jdbc:sqlserver://%s\\%s:%s;databaseName=%s";
+        String url = "jdbc:sqlserver://%s:%s;databaseName=%s";
         return String.format(url, 
-                            this.hostName, this.instance, this.port, this.dbName);
+                            this.hostName, this.port, this.dbName);
     }
     
     public Connection getConnection() {
