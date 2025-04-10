@@ -11,6 +11,7 @@
 * Apache Tomcat 8.5.100 requires JDK 7 to 11
 * JDK 8 is best suited for all Apache TomCat 8 releases
 * JDBC4, JSTL-1.2, SQLQuery in folder run
+* Configure the correct username and password for SQL Server account in web.xml
 
 ### &#169; 2025 Quốc Huy
 
