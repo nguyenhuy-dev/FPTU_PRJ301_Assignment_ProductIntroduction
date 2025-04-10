@@ -3,6 +3,7 @@
 ## Included in this repo:
 
 * A small Java Web Application to manage information about products
+* A major assignment from the course Java Web Application at FPT HCM University
 * Structured based on the MVC architecture
 * Built with: JDBC, Servlet, JSP
 
