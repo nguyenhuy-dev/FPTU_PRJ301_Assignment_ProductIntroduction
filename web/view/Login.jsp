@@ -22,7 +22,7 @@
         <form action="login" method="POST">
             <div class="container">
                 <label for="account"><b>Account:</b></label>
-                <input type="text" placeholder="Ex: manager" value="${account}" name="account" required>
+                <input type="text" placeholder="Ex: admin" value="${account}" name="account" required>
 
                 <label for="pass"><b>Password:</b></label>
                 <input type="password" placeholder="Ex: 123" value="${pass}" name="pass" required>
